@@ -1,0 +1,6 @@
+{
+  "name": "BusWhere - School Bus GPS Tracer & Safety System",
+  "description": "Real-time school bus GPS tracking, geofence proximity alerts, combined driver/supervisor attendance console, student fee gating, and route history playback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-arabic: 'Cairo', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Ensure Leaflet container renders smoothly with standard font and layout */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #e2e8f0;
+  font-family: inherit;
+  z-index: 10;
+}
+
+/* Custom Leaflet popup styling */
+.leaflet-popup-content-wrapper {
+  border-radius: 14px;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.15), 0 8px 10px -6px rgba(15, 23, 42, 0.1);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4;
+}
+
+/* Geofence pulse animation */
+@keyframes geofence-pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.25;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+}
+
+.geofence-ring {
+  animation: geofence-pulse 3s ease-in-out infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "summary":  "Step-by-step production deployment plan covering external Cloud VPS and Firebase Hosting setup, production build generation, custom domain and SSL configuration, and automated one-click WhatsApp credential dispatch from the Admin portal.",
+  "updatedAt":  "2026-10-31T07:32:03.378075694Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}
